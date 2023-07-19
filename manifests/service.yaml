@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: containerizeanddeploy
-  namespace: namespace-workflow-1689750990940
+  name: CnD
+  namespace: contndeploy
 spec:
   type: LoadBalancer
   selector:
-    app: containerizeanddeploy
+    app: CnD
   ports:
     - protocol: TCP
       port: 8000
