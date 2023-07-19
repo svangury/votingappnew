@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: CnD
+  name: test
   labels:
-    app: CnD
-  namespace: contndeploy
+    app: test
+  namespace: namespace-workflow-1689761443388
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: CnD
+      app: test
   template:
     metadata:
       labels:
-        app: CnD
+        app: test
     spec:
       containers:
-        - name: CnD
-          image: testreg66378.azurecr.io/cndimage:latest
+        - name: test
+          image: testreg66378.azurecr.io/image-workflow-1689761443388:latest
           ports:
             - containerPort: 8000
