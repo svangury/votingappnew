@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adfadf
+  name: containerizeanddeploy
   labels:
-    app: adfadf
-  namespace: namespace-workflow-1689749238911
+    app: containerizeanddeploy
+  namespace: namespace-workflow-1689750990940
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adfadf
+      app: containerizeanddeploy
   template:
     metadata:
       labels:
-        app: adfadf
+        app: containerizeanddeploy
     spec:
       containers:
-        - name: adfadf
-          image: acrworkflow1689749238911.azurecr.io/image-workflow-1689749238911:latest
+        - name: containerizeanddeploy
+          image: acrworkflow1689750990940.azurecr.io/image-workflow-1689750990940:latest
           ports:
             - containerPort: 8000

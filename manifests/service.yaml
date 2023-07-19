@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: adfadf
-  namespace: namespace-workflow-1689749238911
+  name: containerizeanddeploy
+  namespace: namespace-workflow-1689750990940
 spec:
   type: LoadBalancer
   selector:
-    app: adfadf
+    app: containerizeanddeploy
   ports:
     - protocol: TCP
       port: 8000
